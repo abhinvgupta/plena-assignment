@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/plena-assignment/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/plena-assignment/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/plena-assignment",
+  "projects": {
+    "access-management-service": {
+      "type": "application",
+      "root": "apps/access-management-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/access-management-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/access-management-service/tsconfig.app.json"
+      }
+    },
+    "plena-assignment": {
+      "type": "application",
+      "root": "apps/plena-assignment",
+      "entryFile": "main",
+      "sourceRoot": "apps/plena-assignment/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/plena-assignment/tsconfig.app.json"
+      }
+    },
+    "token-service": {
+      "type": "application",
+      "root": "apps/token-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/token-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/token-service/tsconfig.app.json"
+      }
+    }
+  }
+}
