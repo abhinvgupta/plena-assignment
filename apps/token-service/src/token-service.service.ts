@@ -1,10 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { TokenData } from './interfaces/fetch-token.interface';
 
 @Injectable()
 export class TokenServiceService {
   private readonly logger = new Logger(TokenServiceService.name);
 
-  fetchToken(symbol: string): any {
+  fetchToken(symbol: string): TokenData {
     this.logger.log('Fetching token', symbol);
     return {
       symbol: 'ETH',

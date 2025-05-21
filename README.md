@@ -1,7 +1,7 @@
 
 ## Description
 
-This is a monorepo project with 2 microservices.
+This is a monorepo project with 2 microservices. Access Management Service and Token Service.
 
 ## Project setup
 
